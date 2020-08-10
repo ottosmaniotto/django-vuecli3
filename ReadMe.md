@@ -17,13 +17,13 @@ npm install
 npm run serve
 ```
 
-**2nd Terminal** 
-
-with virtualenv activated:
+**2nd Terminal**
 
 ```
+virtualenv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-python manage.py createsuperuser
 python manage.py migrate
+python manage.py createsuperuser
 python manage.py runserver
 ```
